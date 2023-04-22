@@ -1,0 +1,173 @@
+:root {
+	/* Color. */
+	--background-color: rgb(255, 255, 255);
+
+	--border-radius: 8px;
+
+	/* Text. */
+	--text-color: rgb(0, 0, 0);
+	--text-passive-color: #9f9f9f;
+	--text-header-font: 'SF-Semibold';
+	--text-font: 'SF-Regular';
+
+	/* Font. */
+	--font-size-u-sm: 20px;
+	--font-size-sm: 24px;
+	--font-size-av: 32px;
+	--font-size-md: 44px;
+	--font-size-lg: 96px;
+
+	/* Buttons. */
+	--button-color: rgb(0, 0, 0);
+	--button-text-color: white;
+
+	/* Input fields. */
+	--color-btn-bg: rgba(255,255,255,0.04);
+
+
+	/* Navbar. */
+	--navbar-color: rgba(6, 6, 6, 0.8);
+	--navbar-text-size: 16px;
+	--navbar-text-color: white;
+	--navbar-font: var(--text-header-font);
+	--navbar-active-color: gold;
+
+	/* Gradients. */
+	--gradient-purple: linear-gradient(45deg,#ff9fe1,#8727ff);
+	--gradient-blue: linear-gradient(45deg,#25a5e6,#0d3ecc);
+
+	/* Plyr video player. */
+	--plyr-color-main: linear-gradient(45deg,#ff9fe1,#8727ff);
+}
+
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	color: var(--text-color);
+	background-color: var(--background-color);
+	margin: 0;
+	padding: 0 10%;
+	box-sizing: border-box;
+	font-family: "SF-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+/* Text. */
+.text-u-sm {
+	font-size: var(--font-size-u-sm);
+	font-family: var(--text-header-font), sans-serif;
+	font-weight: 600;
+}
+
+.text-sm {
+	font-size: var(--font-size-sm);
+	font-family: var(--text-header-font), sans-serif;
+	font-weight: 600;
+	line-height: 22px;
+}
+
+.text-passive {
+	color: var(--text-passive-color);
+}
+
+.text-md {
+	font-size: var(--font-size-md);
+	font-family: var(--text-header-font), sans-serif;
+	font-weight: 600;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 10px;
+	border-radius: var(--border-radius);
+	background: #2e2e2e;
+	max-height: 100px !important;
+}
+
+b {
+	color: white;
+}
+
+.text-av {
+	font-size: var(--font-size-av);
+	font-family: var(--text-header-font), sans-serif;
+}
+
+.text-lg {
+	font-size: var(--font-size-lg);
+}
+
+.text-header {
+	font-family: var(--text-header-font), sans-serif;
+	font-weight: 100;
+}
+
+span {
+	color: var(--text-passive-color);
+}
+
+.flex-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Gradients. */
+.gradient-purple {
+	background-image: var(--gradient-purple);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+.gradient-blue {
+	background: var(--gradient-blue);
+}
+
+/* Backgrounds. */
+.bg-pink {
+	background-color: #fe90e5;
+}
+
+.bg-wavy {
+	background-color: #25a5e6;
+}
+
+/* Fonts.  */
+@font-face {
+	font-family: "SF-Light";
+	src: url("assets/fonts/San Francisco/SF-Pro-Display-Light.otf");
+}
+
+@font-face {
+	font-family: "SF-Regular";
+	src: url("assets/fonts/San Francisco/SF-Pro-Display-Regular.otf");
+}
+
+@font-face {
+	font-family: "SF-Semibold";
+	src: url("assets/fonts/San Francisco/SF-Pro-Display-Semibold.otf");
+}
+
+@font-face {
+	font-family: "SF-Bold";
+	src: url("assets/fonts/San Francisco/SF-Pro-Text-Bold.otf");
+}
