@@ -5,7 +5,7 @@
 	--border-radius: 8px;
 
 	/* Text. */
-	--text-color: rgb(0, 0, 0);
+	--text-color: rgb(61, 92, 255);
 	--text-passive-color: #9f9f9f;
 	--text-header-font: 'SF-Semibold';
 	--text-font: 'SF-Regular';
@@ -57,7 +57,7 @@ body {
 
 a {
 	outline: none;
-	text-decoration: none;
+	text-decoration: underline;
 	color: var(--text-color);
 }
 
@@ -72,7 +72,7 @@ a {
 	font-size: var(--font-size-sm);
 	font-family: var(--text-header-font), sans-serif;
 	font-weight: 600;
-	line-height: 22px;
+	line-height: 35px;
 }
 
 .text-passive {
