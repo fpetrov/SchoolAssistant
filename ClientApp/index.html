@@ -9,5 +9,18 @@
 </head>
 <body>
 <h1>Hello, World!</h1>
+<p id="message"></p>
 </body>
+
+<script>
+    let message = document.getElementById('message');
+
+    const sse = new EventSource(`/ask/?prompt=У меня есть вопрос по теме производной, я ничего не понимаю в ней. Можешь мне объяснить ее?`);
+
+    //listen to incoming messages
+    sse.addEventListener("message", ({ data }) => {
+        let msgObj = JSON.parse(data)
+        message.innerText += msgObj.text;
+    });
+</script>
 </html>
