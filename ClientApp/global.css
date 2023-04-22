@@ -5,7 +5,7 @@
 	--border-radius: 8px;
 
 	/* Text. */
-	--text-color: rgb(61, 92, 255);
+	--text-color: black;
 	--text-passive-color: #9f9f9f;
 	--text-header-font: 'SF-Semibold';
 	--text-font: 'SF-Regular';
@@ -58,7 +58,7 @@ body {
 a {
 	outline: none;
 	text-decoration: underline;
-	color: var(--text-color);
+	color: rgb(61, 92, 255);
 }
 
 /* Text. */
