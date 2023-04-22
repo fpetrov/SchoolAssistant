@@ -21,7 +21,7 @@ app.use(express.json());
 app.use('/', express.static(clientAppFolder));
 
 
-app.get('/ask', async (req, res) => {
+app.post('/ask', async (req, res) => {
     const { messages_history } = req.body;
 
     const completion = await openai.createChatCompletion({
