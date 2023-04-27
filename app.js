@@ -12,8 +12,6 @@ const openai = new OpenAIApi(configuration);
 
 const clientAppFolder = path.join(__dirname, 'ClientApp')
 
-// В конце твоего ответа приводи ссылки на 3 YouTube видео, связанных с этой темой.
-
 // Добавление Middleware на парсинг JSON'а.
 app.use(express.json());
 
