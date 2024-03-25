@@ -10,13 +10,11 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
-const clientAppFolder = path.join(__dirname, 'ClientApp')
+//const clientAppFolder = path.join(__dirname, 'ClientApp')
 
-// Добавление Middleware на парсинг JSON'а.
 app.use(express.json());
 
-// Добавление Middleware на обработку статического контента по этому пути.
-app.use('/', express.static(clientAppFolder));
+//app.use('/', express.static(clientAppFolder));
 
 
 app.post('/ask', async (req, res) => {
